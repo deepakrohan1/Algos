@@ -1,15 +1,17 @@
+package com.company.ds;
+
 import java.util.*;
 
 public class Stack {
     
-    ArrayList<Integer> st = new ArrayList<> ();
+    ArrayList<String> st = new ArrayList<> ();
     
     
-    private void push(int item) {
+    public void push(String item) {
         st.add(st.size(), item);
     }
     
-    private Integer pop() {
+    public String pop() {
 
         if (st.size() > 0) {
             return st.remove(st.size() - 1);
@@ -20,11 +22,11 @@ public class Stack {
         return null;        
     }
     
-    private Integer size() {
+    public Integer size() {
         return st.size();
     }
     
-    private Integer peek() {
+    public String peek() {
         if (st.size() > 0) {
             return st.get(st.size() - 1);
         } else {
