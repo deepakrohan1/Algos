@@ -34,5 +34,26 @@ public class Main {
         main.traverseALinkedList(list);
 
 
+		/**
+		    public static void main(String args[]) {
+
+		      MyClass c = new MyClass();
+		      c.pop();
+		      c.push(1111);
+		      c.push(88888);
+		      System.out.println("size: " + c.size());
+		      System.out.println("peek: " + c.peek());
+		      System.out.println("popped: " + c.pop());
+		      System.out.println("size: " + c.size());
+		      System.out.println("peek: " + c.peek());
+		      System.out.println("popped: " + c.pop());
+		      System.out.println("size: " + c.size());
+		      System.out.println("peek: " + c.peek());
+		      System.out.println("popped: " + c.pop());
+		      System.out.println("size: " + c.size());
+		      System.out.println("peek: " + c.peek());
+		    }
+			**/
+
     }
 }

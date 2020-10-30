@@ -1,32 +1,12 @@
 import java.util.*;
 
-public class MyClass {
+public class Stack {
     
     ArrayList<Integer> st = new ArrayList<> ();
-    
-    public static void main(String args[]) {
-
-      MyClass c = new MyClass();
-      c.pop();
-      c.push(1111);
-      c.push(88888);
-      System.out.println("size: " + c.size());
-      System.out.println("peek: " + c.peek());
-      System.out.println("popped: " + c.pop());
-      System.out.println("size: " + c.size());
-      System.out.println("peek: " + c.peek());
-      System.out.println("popped: " + c.pop());
-      System.out.println("size: " + c.size());
-      System.out.println("peek: " + c.peek());
-      System.out.println("popped: " + c.pop());
-      System.out.println("size: " + c.size());
-      System.out.println("peek: " + c.peek());
-    }
     
     
     private void push(int item) {
         st.add(st.size(), item);
-        System.out.println("added: " + item);
     }
     
     private Integer pop() {
