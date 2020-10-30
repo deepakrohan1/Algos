@@ -76,7 +76,7 @@ public class Main {
 
                         postfix.push(tokens[i]);
 //                        + , - , 2
-                        for(int i = )
+//                        for(int i = )
 
 
                     }
