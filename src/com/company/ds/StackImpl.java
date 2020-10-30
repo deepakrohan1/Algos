@@ -7,6 +7,6 @@ public class StackImpl {
     List<Integer> integers = new ArrayList<>();
 
     private boolean push(int i) {
-
+        return false;
     }
 }
