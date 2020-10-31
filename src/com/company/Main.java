@@ -34,6 +34,8 @@ public class Main {
 		Factorial f = new Factorial();
 		System.out.println(f.calculateFactorial(5));
         System.out.println(f.calculateFactorial(2));
+		
+		System.out.println(f.calculateFib(7));
 
 
         // write your code here
@@ -43,7 +45,7 @@ public class Main {
 
         // String[] operands = {"0","1","2","3","4","5","6","7","8","9"};
   //       String[] operators = { "+", "-", "/","*", "(", ")"};
-  //  Map<String, Integer> precedence = new HashMap<>();
+  //  Map<String, Integer> prrecedence = new HashMap<>();
 //        DMAS
 
 //        precedence.put("*", 4);

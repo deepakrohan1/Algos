@@ -13,4 +13,11 @@ public class Factorial {
 		else 
 			return i * calculateFactorial(i - 1);
 	}
+	
+	public int calculateFib(int i) {
+		if(i == 1 || i == 2)
+			return 1;
+		else 
+			return calculateFib(i -1) + calculateFib(i - 2);
+	}
 }
