@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.ds.LinkedList;
 import com.company.obj.Node;
-import com.company.ds.Stack;
+//import com.company.ds.Stack;
 import com.company.problems.Factorial;
 
 import java.util.*;

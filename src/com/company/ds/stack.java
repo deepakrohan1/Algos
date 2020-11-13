@@ -2,7 +2,7 @@ package com.company.ds;
 
 import java.util.*;
 
-public class Stack {
+class Stack {
     
     ArrayList<String> st = new ArrayList<> ();
     

@@ -1,44 +1,72 @@
+package com.company.ds;
+
 public class BST {
+    Node root;
 
-    public String breathFisrtSearch(Node node) {
-        String result = "";
-        
-        // this finds the end of the branch
-        if (node == null) {
-            result += " ";
-            return node;
-        } else {
-            result += node.data;
+    public Node search(Node root, Integer key) {
+
+        if (root == null || root.key == key) {
+            return root;
         }
 
-        if(node.left != null) {
-        result += breathFisrtSearch(node.left);
+        // the key is greater than root's key
+        if (root.key < key) {
+            return search(root.right, key);
         }
 
-        if (node.right != null) {
-        result += breathFisrtSearch(node.right);
+        // the key is lesser than root's key
+        return search(root.left, key);
+    }
+
+    public void insert(Integer key) {
+
+        this.root = insertRecursive(this.root, key);
+    }
+
+    private Node insertRecursive(Node root, Integer key) {
+
+        if (root == null) {
+           return new Node(key);
         }
 
-        return result;
+        if (key < root.key) {
+            root.left = insertRecursive(root.left, key);
+        } else if (key > root.key) {
+            root.right = insertRecursive(root.right, key);
+        }
+
+        return root;
     }
     
-    public static void main (String args []) {
-        BST firstTreeWithBranches = new BST();
-
-        Node node = new Node(1, null, null);
-        firstTreeWithBranches.breathFisrtSearch(node);
+    public static void main(String[] args) {
+        BST bst = new BST();
+        bst.insert(50);
+        bst.insert(30);
+        bst.insert(70);
+        bst.insert(20);
+        bst.insert(40);
+        bst.insert(60);
+        bst.insert(80);
+         
+        System.out.println(bst.search(bst.root, 30));
     }
 }
 
 
 class Node {
-    Integer data;
-    Node left;
-    Node right;
+    @Override
+    public String toString() {
+        return "Node{" +
+                "key=" + key +
+                '}';
+    }
 
-    public Node (Integer data, Node left, Node right) {
-        this.data = data;
-        this.left = left;
-        this.right = right;
+    Integer key;
+    Node left, right;
+
+    public Node (Integer key) {
+        this.key = key;
+        left = right = null;
     }
 }
+
